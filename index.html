@@ -3,83 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI TOOLS</title>
+    <title>Streetwear Clothing Brand</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some basic styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 1.5rem;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
+
+        /* Container */
         .container {
-            padding: 2rem;
+            width: 90%;
+            margin: 0 auto;
         }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .gallery img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #333;
+
+        /* Header */
+        header {
+            background: #412121;
             color: #fff;
-            text-align: center;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
-            bottom: 0;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: #;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 60px; /* offset for fixed header */
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        /* Shop Section */
+        #shop {
+            padding: 3rem 0;
+        }
+
+        #shop .product-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #shop .product {
+            background: # #B9B9B9  ;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            width: calc(33.333% - 40px);
+            margin-bottom: 20px;
+        }
+
+        #shop .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #shop .product h3 {
+            margin: 1rem 0;
+        }
+
+        #shop .product p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* About Section */
+        #about {
+            background: #412121;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        #about p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 3rem 0;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact form label {
+            font-weight: bold;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        #contact form button {
+            background: #333;
+            color: #fff;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #contact form button:hover {
+            background: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: #412121;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>AI TOOLS</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="sixthsense_logo(white).png" alt="Brand Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="home">
-            <h2>hi</h2>
-            <p>my art :)</p>
-        </section>
-        <section id="gallery" class="gallery">
-            <h2>Gallery</h2>
-            <img src="images3/BIGSWORD(yellow).png" alt="Streetwear 1">
-            <img src="images3/BIGSWORD.png" alt="Streetwear 2">
-            <img src="images3/Flower.png" alt="Streetwear 3">
-            <img src="images3/ICANSEEDEADPEOPLE.png" alt="Streetwear 4">
-        </section>
-    </div>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Our Streetwear Collection</h1>
+            <p>Discover the latest trends in street fashion.</p>
+        </div>
+    </section>
+
+    <section id="shop">
+        <div class="container">
+            <h2>Shop</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="SMILE!-tee.png" alt="Product 1">
+                    <h3>SMILE! t-shirt&nbsp;</h3>
+                    <p>$50.00</p>
+                </div>
+                <div class="product">
+                    <img src="RINGZ-tee.png" alt="Product 2">
+                    <h3>RINGZ t-shirt&nbsp;</h3>
+                    <p>$45.00</p>
+                </div>
+                <div class="product">
+                    <img src="AWAKENED-tee.png" alt="Product 3">
+                    <h3>Awakened t-shirt&nbsp;</h3>
+                    <p>$45.00</p>
+                </div>
+                <div class="product">
+                    <img src="REDHEAD-tee.png" alt="Product 4">
+                    <h3>Redhead t-shirt&nbsp;</h3>
+                    <p>$40.00</p>
+                </div>
+                <div class="product">
+                    <img src="BIGSWORD(orange)shirt.png" alt="Product 5">
+                    <h3>BIGSWORD (orange) t-shirt&nbsp;</h3>
+                    <p>$40.00</p>
+                </div>
+                <div class="product">
+                    <img src="BIGSWORD(yellow)shirt.png" alt="Product 6">
+                    <h3>BIGSWORD (yellow) t-shirt&nbsp;</h3>
+                    <p>$40.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a brand dedicated to bringing you the latest and greatest in streetwear fashion.&nbsp;At Sixth Sense, we believe that streetwear is more than just a fashion statement—it's a lifestyle. Born from the urban culture and influenced by the energy of city life, our collections are designed to push the boundaries of style and self-expression. We are dedicated to providing high-quality, innovative clothing that reflects the bold and dynamic spirit of the streets. Join us on this journey and make a statement with Sixth Sense.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; AI tools discussion. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Streetwear Clothing Brand. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
+
